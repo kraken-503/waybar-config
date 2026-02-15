@@ -12,6 +12,8 @@
   "modules-right": [
     "cpu",
     "memory",
+    "battery",
+    "backlight",
     "pulseaudio",
     "clock",
     "clock#simpleclock",
@@ -80,6 +82,15 @@
   },
   "memory": {
     "format": " {used:0.1f}Gi",
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""],
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{percent}% {icon}",
+    "format-icons": ["", ""],
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",

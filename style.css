@@ -2,8 +2,8 @@
   min-height: 0;
   min-width: 0;
   font-family: Lexend, "JetBrainsMono NFP";
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 window#waybar {
@@ -13,6 +13,7 @@ window#waybar {
   /* background-color: #181825; */
   background-color: #11111b;
   /* background-color: rgba(24, 24, 37, 0.6); */
+  opacity: 0.78;
 }
 
 #workspaces button {
@@ -48,6 +49,8 @@ window#waybar {
 #cpu,
 #tray,
 #memory,
+#battery,
+#backlight,
 #window,
 #mpris {
   padding: 0.3rem 0.6rem;
@@ -82,6 +85,10 @@ window#waybar.empty #window {
   color: #cba6f7;
 }
 
+#battery {
+  color: #cba6f7;
+}
+
 #clock {
   color: #74c7ec;
 }
@@ -95,6 +102,10 @@ window#waybar.empty #window {
 }
 
 #pulseaudio {
+  color: #b4befe;
+}
+
+#backlight {
   color: #b4befe;
 }
 
